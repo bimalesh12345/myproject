@@ -1,0 +1,43 @@
+{
+  "name": "airguides",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://bimalesh12345.github.io/myproject/",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bootstrap": "^4.3.1",
+    "concurrently": "^4.1.0",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "firebase-tools": "^6.10.0",
+    "gh-pages": "^2.0.1",
+    "nodemailer": "^4.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1",
+    "reactstrap": "^8.0.0"
+  },
+  "scripts": {
+    "start": "concurrently \"react-scripts start\" \"nodemon server/server.js\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "proxy": "http://localhost:5000"
+}
