@@ -23,7 +23,7 @@ var express = require('express'),
           secure: true,
           auth: {
               user: 'bimalesh12345@gmail.com',
-              pass: '9616113154'
+              pass: ''
           }
       });
       let mailOptions = {
