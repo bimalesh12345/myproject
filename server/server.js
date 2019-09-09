@@ -22,7 +22,7 @@ var express = require('express'),
           port: 465,
           secure: true,
           auth: {
-              user: 'bimalesh12345@gmail.com',
+              user: 'bimal@gmail.com',
               pass: ''
           }
       });
