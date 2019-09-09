@@ -28,7 +28,7 @@ var express = require('express'),
       });
       let mailOptions = {
           from: 'bimalesh', // sender address
-          to: "bimalesh12345@gmail.com", // list of receivers
+          to: "bimalesh@gmail.com", // list of receivers
           subject: req.body.subject, // Subject line
           text: req.body.body, // plain text body
           html: '<b>Contact us page</b>' // html body
